@@ -17,15 +17,12 @@ This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course
 
 ## Contributing Members
 
-**Team Leader: [Full Name](https://github.com/[github handle])(@slackHandle)**
-**Instructor: [Full Name](https://github.com/[github handle])(@slackHandle)**
+**Team Leader: [Carlos Javier Cepeda](https://github.com/jhavierc)**
+**Contributor: [David Hernando Salamanca](https://github.com/[github handle])(@slackHandle)**
+**Contributor: [Name](https://github.com/[github handle])(@slackHandle)**
+**Contributor: [Name](https://github.com/[github handle])(@slackHandle)**
+**Contributor: [Name](https://github.com/[github handle])(@slackHandle)**
 
-#### Other Members:
-
-|Name     |  Email   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
 
 ## Contact
 * Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
