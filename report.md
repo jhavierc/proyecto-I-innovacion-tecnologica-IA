@@ -36,79 +36,37 @@ Desarrollar un modelo de *Machine Learning* que prediga la evolución de la prod
 4. Evaluar su precisión mediante métricas como RMSE, R² y MAE.  
 5. Visualizar resultados y proyecciones por región para facilitar la interpretación y la toma de decisiones.  
 
-## **Estado del arte: Modelos de Machine Learning en la Transición Energética** ##
+## Panorama general del uso de ML en energía
 
-### Contexto
+El aprendizaje automático (Machine Learning, ML) se ha convertido en una herramienta potente para abordar la complejidad de los sistemas energéticos modernos ([energyinformatics.springeropen.com](https://energyinformatics.springeropen.com)). En las últimas dos décadas ha ocurrido un aumento dramático en la aplicación de técnicas de ML en el sector energético ([mdpi.com](https://www.mdpi.com)). Los modelos de ML (excluyendo las redes neuronales profundas) abarcan métodos como árboles de decisión, bosques aleatorios (Random Forest), máquinas de vectores de soporte (SVM), modelos ensemble (p. ej., gradient boosting), y enfoques de aprendizaje por refuerzo. Estos métodos permiten extraer patrones de grandes datos dinámicos para predecir la demanda energética, estimar la generación renovable y optimizar la operación de recursos ([energyinformatics.springeropen.com](https://energyinformatics.springeropen.com)). Gracias a su precisión, rapidez y eficiencia, los modelos de ML se han vuelto esenciales en la modelización predictiva de la producción, consumo y análisis de demanda en sistemas eléctricos ([mdpi.com](https://www.mdpi.com)). La combinación de múltiples técnicas (modelos híbridos) ha demostrado mejorar la exactitud y robustez de las predicciones, especialmente en energías renovables. En suma, el estado del arte indica que las técnicas de ML no neuronales complementan y, en ciertos casos, rivalizan con los métodos basados en redes neuronales, aportando mayor interpretabilidad y menores requerimientos computacionales en aplicaciones clave de la transición energética ([orca.cardiff.ac.uk](https://orca.cardiff.ac.uk)).
 
-La transición energética global implica reemplazar fuentes fósiles por energías limpias para reducir emisiones de carbono. Este cambio ha aumentado significativamente la participación de renovables en muchas matrices eléctricas, lo que introduce desafíos de variabilidad e incertidumbre. En este contexto, los métodos de *Machine Learning* (ML) han surgido como herramientas potentes para predecir generación, demanda y optimizar la operación de sistemas eléctricos. 
+## Predicción de demanda y generación eléctrica
 
-A diferencia de modelos estadísticos tradicionales, los algoritmos de ML pueden aprender patrones no lineales en grandes volúmenes de datos históricos. En particular, los modelos de ML **no neuronales** (como árboles de decisión, SVM y ensambles como XGBoost) ofrecen ventajas como mayor interpretabilidad y menor requerimiento computacional, siendo muy útiles en la planificación energética.
+Los métodos de ML tradicionales se han aplicado ampliamente para pronosticar el consumo energético a corto y mediano plazo. Algoritmos como bosques aleatorios y boosting (XGBoost) logran alta precisión en pronósticos de carga horaria mediante modelos ensemble ([arxiv.org](https://arxiv.org)). Las SVM se han usado eficazmente para pronóstico solar y eólico, con errores medios de ~4%, comparables a redes neuronales ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov)). Modelos basados en árboles y bosques aleatorios también son efectivos para predicción energética a nivel de edificios, con ventajas como bajo requerimiento de ajuste y manejo de variables categóricas ([orca.cardiff.ac.uk](https://orca.cardiff.ac.uk)). En la predicción de generación renovable, se ha demostrado que modelos SVM híbridos y Random Forest pueden mejorar estabilidad y reducir error de predicción ([researchgate.net](https://researchgate.net)).
 
----
+## Planificación y operación del sistema eléctrico
 
-### Aplicaciones de ML en la transición energética
+Árboles de decisión se han utilizado para planificar microredes y respaldar el despacho de seguridad en sistemas eléctricos con gas natural, proporcionando reglas interpretables y resiliencia ante contingencias ([mdpi.com](https://www.mdpi.com)). Técnicas de aprendizaje por refuerzo (RL), incluso sin redes neuronales, se aplican para optimizar programación de recursos distribuidos y respuesta a la demanda, con capacidad de adaptación a incertidumbre ([energyinformatics.springeropen.com](https://energyinformatics.springeropen.com)). Modelos predictivos no neuronales también ayudan a estimar potencia no servida y ajustar requerimientos de reserva operativa.
 
-Las aplicaciones de ML no neuronales se centran principalmente en:
+## Análisis de políticas y escenarios energéticos
 
-- **Predicción de generación renovable:** Modelos como Random Forest, SVM o XGBoost se han aplicado exitosamente a la predicción de producción eólica y solar. Estudios recientes han alcanzado coeficientes *R²* cercanos a 0.99 en predicciones horarias, utilizando modelos ensemble bien calibrados.
+Árboles optimizados (boosted trees) permiten identificar factores que impulsan la transición energética (políticas, costos, estructuras de mercado). Por ejemplo, Alova y Caldecott (2021) usaron CatBoost para analizar 20 años de datos en 33 países, cuantificando el efecto de políticas sobre la expansión de capacidad renovable ([researchgate.net](https://researchgate.net)). También se emplean algoritmos de clasificación, clustering y metamodelos para explorar miles de escenarios y predecir eventos como el pico de emisiones. Estos métodos detectan no linealidades clave en la evolución del sistema energético ([sciencedirect.com](https://www.sciencedirect.com), [nature.com](https://www.nature.com)).
 
-- **Pronóstico de demanda eléctrica:** Estos modelos también se usan para anticipar picos de carga, facilitando el balance oferta-demanda y la planificación del despacho.
+Finalmente, ML apoya políticas adaptativas mediante análisis de grandes volúmenes de datos históricos, modelando demanda a largo plazo y balanceando objetivos económicos, sociales y ambientales, especialmente en países en desarrollo ([mdpi.com](https://www.mdpi.com)).
 
-- **Mantenimiento predictivo y redes inteligentes:** El ML permite detectar patrones de fallo antes de que ocurran, mejorando la fiabilidad del sistema.
+## Referencias
 
-- **Análisis de escenarios y políticas:** Herramientas de boosting se han utilizado para identificar los factores que impulsan la transición energética a nivel país o empresa.
-
-Ejemplos reales incluyen:
-- Google, que optimizó la producción eólica usando ML y aumentó en 20% el valor comercial de esa energía.
-- AEMO (Australia), que implementó sistemas ML para mejorar la estabilidad de la red.
-
----
-
-### Modelos más usados
-
-Entre los modelos más populares se destacan:
-
-- **Árboles de decisión y Random Forest:** Por su capacidad de manejar relaciones complejas y su buena explicabilidad.
-- **Gradient Boosting / XGBoost:** Muy precisos en tareas con alta dimensionalidad y variabilidad. Útiles en forecasting y análisis de impacto de políticas.
-- **SVM / SVR:** Robustas ante ruido y efectivas con pocos datos. Usadas en pronóstico solar y eólico.
-- **k-NN y procesos gaussianos:** Menos frecuentes pero útiles en tareas específicas.
-
-Los **ensambles y modelos híbridos** (combinación de varios métodos) son particularmente efectivos para mejorar precisión y robustez. También se exploran enfoques que integran conocimiento físico con ML para mejorar la generalización.
-
----
-
-### Desafíos
-
-A pesar de sus beneficios, hay varios retos que aún deben superarse:
-
-- **Intermitencia y datos no estacionarios:** Las fuentes renovables son altamente variables y los modelos deben adaptarse a estos cambios.
-- **Falta de datos de calidad:** En muchas regiones, la infraestructura de monitoreo es insuficiente para alimentar modelos precisos.
-- **Interpretabilidad:** Aunque algunos modelos son más explicables, todavía se trabaja en traducir resultados complejos a recomendaciones claras.
-- **Integración en la operación real:** Las predicciones deben ser confiables, rápidas y seguras para incorporarse en decisiones críticas del sistema eléctrico.
-
----
-
-### Conclusión
-
-El uso de modelos de ML no neuronales se ha consolidado como una herramienta eficaz y cada vez más adoptada para apoyar la transición energética. Su aplicación en predicción, planificación y análisis de políticas permite operar sistemas más sostenibles, seguros y eficientes. Sin embargo, su efectividad depende de la calidad de datos, capacidad de adaptación y aceptación por parte de los operadores.
-
----
-
-### Referencias
-
-1. Rajaperumal, T. A., & Columbus, C. C. (2025). *Enhanced wind power forecasting using machine learning...* Scientific Reports, 15, Art. 20572.  
-2. Alazemi, T., et al. (2024). *Renewable energy sources integration via machine learning modelling...* Heliyon, 10(4), e026088.  
-3. Rhafes, M. Y., et al. (2025). *Machine learning models in renewable energy forecasting...* IJEECS, 37(3), 1874–1886.  
-4. Lindas, É., et al. (2025). *Towards accurate forecasting of renewable energy...* arXiv:2504.16100.  
-5. Aslam, S., et al. (2025). *Machine learning applications in energy systems...* Energy Informatics, 8, Art. 62.  
-6. Ejiyi, C. J., et al. (2025). *AI in renewable energy systems...* Journal of Big Data, 12, Art. 169.  
-7. Demolli, H., et al. (2019). *Wind power forecasting based on daily wind speed...* Energy Conv. & Mgmt, 198, 111823.  
-8. Lai, J.-P., et al. (2020). *Survey of machine learning in renewable energy...* Applied Sciences, 10(17), 5975.  
-9. Sweeney, C., et al. (2019). *The future of forecasting for renewable energy.* WIREs Energy & Environment, 9(2), e365.  
-10. Chen, X., et al. (2019). *Transition towards higher penetration of renewables...* JMPSE, 7(1), 1–8.  
-11. Benti, N. E., et al. (2023). *Forecasting renewable energy with ML...* Sustainability, 15(9), 7087.  
-12. Wang, H., et al. (2019). *A review of deep learning for renewable energy forecasting.* ECM, 198, 111799.  
-13. Aslam, S., et al. (2021). *A survey on DL methods for energy forecasting.* RSE Reviews, 144, 110992.  
+1. Lahouar & Slama (2015). DOI: 10.1016/j.enconman.2015.07.041  
+2. Moutis et al. (2016). DOI: 10.1016/j.apenergy.2015.10.017  
+3. Ahmad et al. (2017). DOI: 10.1016/j.enbuild.2017.04.038  
+4. Mosavi et al. (2019). DOI: 10.3390/en12071301  
+5. Donti & Kolter (2021). DOI: 10.1146/annurev-environ-020220-061831  
+6. Alova & Caldecott (2021). DOI: 10.1016/j.isci.2021.102929  
+7. Yao et al. (2023). DOI: 10.1038/s41578-022-00490-5  
+8. Yang et al. (2020). DOI: 10.1016/j.arcontrol.2020.04.015  
+9. Arslan Tuncar et al. (2024). DOI: 10.1016/j.egyr.2024.06.006  
+10. Atiç & Izgi (2024). DOI: 10.3390/su16125193  
+11. Aslam et al. (2025). DOI: 10.1186/s42162-025-00524-6  
 
 
 ## **Planeación: tareas y cronograma** ##
