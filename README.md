@@ -19,7 +19,7 @@ This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course
 
 **Team Leader: [Carlos Javier Cepeda](https://github.com/jhavierc)**
 **Contributor: [David Hernando Salamanca](https://github.com/[github handle])(@slackHandle)**
-**Contributor: [Name](https://github.com/[github handle])(@slackHandle)**
+**Contributor: [Deibi Flavio Bastidas Ceron](https://github.com/deibi8201)**
 **Contributor: [Name](https://github.com/[github handle])(@slackHandle)**
 **Contributor: [Name](https://github.com/[github handle])(@slackHandle)**
 
