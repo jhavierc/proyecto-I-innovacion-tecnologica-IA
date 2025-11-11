@@ -151,11 +151,12 @@ plot_time_series(df_imputed, columns=['SOLAR', 'EOLICA', 'PCH'])
 
 ## Equipo (Roles ASUM-DM)
 
-- **Project Manager**: Carlos Javier Cepeda - [carlos.cepeda@icesi.edu.co]
-- **Business Analyst**: [Nombre] - [email@icesi.edu.co]
-- **Data Scientist**: [Nombre] - [email@icesi.edu.co]
-- **Data Engineer**: [Nombre] - [email@icesi.edu.co]
-- **ML Engineer**: [Nombre] - [email@icesi.edu.co]
+- **Business Analyst**: ALEXANDER TORRES VIVEROS
+- **Data Scientist**: CAMILO ARCINIEGAS FORERO
+- **Project Manager**: CARLOS JAVIER CEPEDA
+- **Data Engineer**: DAVID HERNANDO SALAMANCA
+- **ML Engineer**: DEIBI BASTIDAS CERON
+
 
 ### Canales de Comunicación
 - **Reuniones semanales**: Sabados 2:00 PM
