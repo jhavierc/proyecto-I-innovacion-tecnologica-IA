@@ -20,6 +20,10 @@ La necesidad de desarrollar sistemas inteligentes que puedan procesar, analizar 
 ### Objetivo General
 Desarrollar una solución tecnológica integral que utilice técnicas de inteligencia artificial para la extracción, procesamiento y análisis inteligente de datos, facilitando la toma de decisiones basada en evidencia.
 
+#### Pregunta Smart
+¿Qué tan preciso puede ser un modelo de Machine Learning, basado en regresión o series de tiempo, al predecir —a partir de variables operacionales, técnicas y geográficas de los proyectos FNCER (capacidad [MW], tecnología [Solar, Eólica, PCH], estado [operación, pruebas], tipo de proyecto y ubicación [departamento/municipio])— si Colombia alcanzará o superará la meta de 6 GW de capacidad instalada de energías renovables antes de agosto de 2026 definida en el Plan Argo, estimando además el desfase temporal (± meses) respecto a la fecha real de cumplimiento (T) y aportando información estratégica para la toma de decisiones en política energética?
+
+
 ### Objetivos Específicos
 
 #### 1. Objetivo Técnico
